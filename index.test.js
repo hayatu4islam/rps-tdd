@@ -1,5 +1,7 @@
 function rps(left, right) {
-    return left === "rock" || right === "paper" || (left === "paper" && right === "rock") ? "left" : "right";
+    return ((left === "rock" && right === "scissors") 
+    || (left === "scissors" && right === "paper") 
+    || (left === "paper" && right === "rock")) ? "left" : "right";
 }
 
 describe("rock, paper, scissors", () => {
